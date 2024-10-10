@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+} 
+a {
+    color: rgb(103, 103, 241);
+}
+a:visited {
+    columns: rgb(103, 103, 241);
+}
+a:hover, a:active {
+    columns: #000;
+    text-decoration: none;
+}
+.body-bg {
+    background-image: linear-gradient(to bottom, rgb(11, 6, 161), rgb(32, 2, 80));    
+    color: white;
+}
+.base-bg {
+    background-color: rgb(255, 236, 185);
+    background-image: linear-gradient(to bottom, rgb(105, 100, 247), rgb(32, 2, 80));    
+    color: rgb(246, 226, 218);
+    padding: 1em;
+}
+.header {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.header h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(105, 100, 247);
+}
+.col-2,
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/****** standard IMG *********/
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+figure {
+    margin:0;
+}
+
+.footer {
+    color: rgb(255, 166, 65);
+    padding: 1em;
+}
+.footer ul{
+    list-style: none;
+}
+a, .footer a {
+    color: rgb(124, 143, 238);
+}
+.footer a {
+    line-height: 1.5;
+}
+.footer a:visited {
+    color: rgb(3, 32, 151);
+}
+.footer a:active, .footer a:hover {
+    text-decoration: none;
+}
+blockquote {
+    background-color: rgba(0,0,0, 0.5);
+    padding:1em;
+}
+.copy {
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+/* ******** 48em ********* */
+@media screen and (min-width:48em) {
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .col-3 {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        row-gap: 1em;
+    }
+    .header h1 {
+        font-size: 4em;
+    }
+}
+@media screen and (min-width:60em) {
+    .col-3 {
+        gap: 2em;
+        row-gap: 2em;
+    }
+    .col-23 {
+        grid-template-columns: 2fr 1fr;
+        gap:2em
+    }
+
+}
+@media screen and (min-width:80em) {
+    .container {
+        max-width: 76em;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:100em) {
+    .container {
+        max-width: 90em;
+    }
+}
